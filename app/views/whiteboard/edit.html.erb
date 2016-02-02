@@ -1,0 +1,23 @@
+
+<%= form_for :whiteboard, url: whiteboard_update_path do |f| %>
+<h2>Underwriting Return Times</h2>
+Date: <input type="text" name="whiteboard[updated]" value="<%= @whiteboard.updated %>"><br><br>
+<div style="width: 1000px;">
+<div style="float:left; width:50%;">Conv New Purchase files Submitted to Underwriting on:</div> <div style="float:left; width:50%;"><input type="text" name="whiteboard[pur_conv]" value="<%= @whiteboard.pur_conv %>"></div> </br>
+<div style="float:left; width:50%;">FHA New Purchase files Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[pur_fha]" value="<%= @whiteboard.pur_fha %>"></div> </br>
+<div style="float:left; width:50%;">VA New Purchase files Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[pur_va]" value="<%= @whiteboard.pur_va %>"></div> </br>
+<div style="float:left; width:50%;">USDA New Purchase files Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[pur_usda]" value="<%= @whiteboard.pur_usda %>"></div> </br>
+- - - - - - - - - - - - - - - - - - - - - -- - - - - - - - </br>
+<div style="float:left; width:50%;">Conv Refi New files Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[refi_conv]" value="<%= @whiteboard.refi_conv %>"></div> </br>
+<div style="float:left; width:50%;">FHA Refi New files Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[refi_fha]" value="<%= @whiteboard.refi_fha %>"></div> </br>
+<div style="float:left; width:50%;">VA Refi New files Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[refi_va]" value="<%= @whiteboard.refi_va %>"></div> </br>
+<div style="float:left; width:50%;">USDA Refi New files Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[refi_usda]" value="<%= @whiteboard.refi_usda %>"></div> </br>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </br>
+<div style="float:left; width:50%;">Conv Condition Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[con_conv]" value="<%= @whiteboard.con_conv %>"></div> </br>
+<div style="float:left; width:50%;">HA Condition Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[con_fha]" value="<%= @whiteboard.con_fha %>"></div> </br>
+<div style="float:left; width:50%;">VA New Condition Submitted to Underwriting on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[con_va]" value="<%= @whiteboard.con_va %>"></div> </br>
+<div style="float:left; width:50%;">USDA Condition Submitted to Underwriting  on:</div> <div style="float:left; width:50%;"> <input type="text" name="whiteboard[con_usda]" value="<%= @whiteboard.con_usda %>"></div> </br>
+</div><br>
+<input type="hidden" name="id" value="2">
+<input type="submit" name="submit" value="Submit">
+<% end %>

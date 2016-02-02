@@ -1,0 +1,60 @@
+
+<div style="font-family: 'Roboto', sans-serif; font-size: 14px; color: #52626F;">
+    <div style="text-align: right; font-size: 8pt; padding-bottom: 6px;">Updated on <%= @whiteboard.updated %></div>
+    <div style="display: inline-block; width: 100%;">
+        <div style="float:left; width: 33%;">
+            <div style="width: 220px;">
+                <h2>Locked Purchase Files</h2>
+                <div style="float:left; width: 50%;">
+                    Conv<br>
+                    FHA<br>
+                    VA<br>
+                    USDA<br>
+                </div>
+                <div style="float:left; width: 50%;">
+                    <%= @whiteboard.pur_conv %>
+                    <%= @whiteboard.pur_fha %>
+                    <%= @whiteboard.pur_va %>
+                    <%= @whiteboard.pur_usda %>
+                </div>
+            </div>
+        </div>
+        <div style="float:left; width: 33%;" align="center">
+            <div style="width: 220px;" align="left">
+                <h2>Locked Refinance Submissions</h2>
+                <div style="float:left; width: 50%;">
+                    Conv<br>
+                    FHA<br>
+                    VA<br>
+                    USDA<br>
+                </div>
+                <div style="float:left; width: 50%;">
+                    <%= @whiteboard.refi_conv %>
+                    <%= @whiteboard.refi_fha %>
+                    <%= @whiteboard.refi_va %>
+                    <%= @whiteboard.refi_usda %>
+                </div>
+            </div>
+        </div>
+        <div style="float:left; width: 33%;">
+            <div style="width: 220px;float:right;">
+                <h2>Locked Condition Submissions</h2>
+                <div style="float:left; width: 50%;">
+                    Conv<br>
+                    FHA<br>
+                    VA<br>
+                    USDA<br>
+                </div>
+                <div style="float:left; width: 50%;">
+                    <%= @whiteboard.con_conv %>
+                    <%= @whiteboard.con_fha %>
+                    <%= @whiteboard.con_va %>
+                    <%= @whiteboard.con_usda %>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div style="font-size: 8pt;">
+        View <a style="text-decoration: none;" href="/whiteboard" target="_blank"><span style="color: #028ED2; text-decoration: none;">ALL</span></a>
+    </div>
+</div>

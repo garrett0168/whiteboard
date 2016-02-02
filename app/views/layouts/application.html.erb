@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Whiteboard</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <style>
+      th {
+        font-family: 'Roboto';
+        text-align: left;
+        margin: 0px;
+        border-bottom: solid 1px #222222;
+      }
+      h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        color: #028ED2;
+      }
+      b {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: #028ED2;
+      }
+    </style>
+  </head>
+  <body style="font-family: 'Roboto', sans-serif; font-size: 14px; color: #52626F;">
+
+    <%= yield %>
+
+  </body>
+</html>

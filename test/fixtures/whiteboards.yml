@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pur_conv: MyString
+  pur_fha: MyString
+  pur_va: MyString
+  pur_usda: MyString
+  con_conv: MyString
+  con_fha: MyString
+  con_va: MyString
+  con_usda: MyString
+  refi_conv: MyString
+  refi_fha: MyString
+  refi_va: MyString
+  refi_usda: MyString
+
+two:
+  pur_conv: MyString
+  pur_fha: MyString
+  pur_va: MyString
+  pur_usda: MyString
+  con_conv: MyString
+  con_fha: MyString
+  con_va: MyString
+  con_usda: MyString
+  refi_conv: MyString
+  refi_fha: MyString
+  refi_va: MyString
+  refi_usda: MyString
